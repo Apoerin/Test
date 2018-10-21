@@ -6,54 +6,53 @@
 </head>
 <body>
 <h1>Profile edit page</h1>
-<form>
+<form action="https://postman-echo.com/post" method="post">
     <fieldset>
         <legend>Basic info</legend>
             <ul>
                 <li>
                     <label for="iduser">ID</label>
-                    <input type="text" id="iduser" placeholder="725">
+                    <input type="text" id="iduser" name="idUser" placeholder="725" readonly>
                 </li>
                 <li>
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName">
+                    <input type="text" id="firstName" name="firstName">
                 </li>
                 <li>
                     <label for="lastName">LastName</label>
-                    <input type="text" id="LastName">
+                    <input type="text" id="LastName" name="lastName">
                 </li>
                 <li>
                     <label for="password">Password</label>
-                    <input type="Password" id="password">
+                    <input type="password" id="password" name="password">
                 </li>
                 <li>
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" placeholder="380">
+                    <input type="tel" id="phone" placeholder="380" name="phone">
                 </li>
                 <li>
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="myemail@placeholder.com">
+                    <input type="email" id="email" name="email" placeholder="myemail@placeholder.com">
                 </li>
                 <li>
-                    <label>
-                        <input type="checkbox">Keep my email adress private</label><br>
-                    We'll remove your public profile email and use 1978331+username@user.noreply.localhost
+                    <label><input type="checkbox">Keep my email adress private</label>
+                    <p>We'll remove your public profile email and use 1978331+username@user.noreply.localhost</p>
                 </li>
                 <li>
                     <label for="dob">DOB</label>
-                    <input type="date" id="dob">
+                    <input type="date" id="dob" name="dateOfBirth">
                 </li>
                 <li>
                     <label for="blog">Blog URL</label>
-                    <input type="url" id="blog" placeholder="http://">
+                    <input type="url" id="blog" name="blog" placeholder="http://">
                 </li>
                 <li>
                     <label for="about">About me</label>
-                    <textarea id="about" cols="30" rows="7"></textarea>
+                    <textarea id="about" name="about" cols="30" rows="7"></textarea>
                 </li>
                 <li>
                     <label for="pic">Profile picture</label>
-                    <input type="file" id="pic">
+                    <input type="file" id="pic" name="picture">
                 </li>
             </ul>
         </fieldset>
@@ -67,28 +66,28 @@
                 </li>
                 <li>
                     <label for="exp">Experience</label>
-                    <input type="number" id="exp">
+                    <input type="number" id="exp" name="exp">
                     <label for="exp">years</label>
                 </li>
                 <li>
                     <label>Development experience</label><br>
-                        <input type="radio">Learning to Program<br>
-                        <input type="radio" checked>Junior Developer<br>
-                        <input type="radio">Mid-Level Developer<br>
-                        <input type="radio">Senior Developer<br>
+                    <input type="radio" name="devExp" value="ltp"><label>Learning to Program</label><br>
+                    <input type="radio" name="devExp" value="jd" checked><label>Junior Developer</label><br>
+                    <input type="radio" name="devExp" value="mld"><label>Mid-Level Developer</label><br>
+                    <input type="radio" name="devExp" value="sd"><label>Senior Developer</label><br>
                 </li>
                 <li>
                     <label>Country</label>
                     <select name="country">
-                        <option>- Choose your country -</option>
-                        <option>Ukraine</option>
-                        <option>USA</option>
-                        <option>Thailand</option>
-                        <option>Spain</option>
+                        <option value="choose">- Choose your country -</option>
+                        <option value="UA">Ukraine</option>
+                        <option value="USA">USA</option>
+                        <option value="THAI">Thailand</option>
+                        <option value="ESP">Spain</option>
                     </select>
                 </li>
                 <li>
-                    <input name="surprise" type="hidden">
+                    <input name="surprise" type="hidden" value="youFoundIt">
                 </li>
                 <li>
                     <label>Skills</label><br>
