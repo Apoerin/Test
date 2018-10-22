@@ -1,0 +1,6 @@
+#folder idea
+.idea
+#files
+*.txt
+*.xls
+*.xml
