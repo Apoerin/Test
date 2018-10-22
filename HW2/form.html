@@ -16,15 +16,15 @@
                 </li>
                 <li>
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName">
+                    <input type="text" id="firstName" name="firstName" required>
                 </li>
                 <li>
                     <label for="lastName">LastName</label>
-                    <input type="text" id="LastName" name="lastName">
+                    <input type="text" id="LastName" name="lastName" required>
                 </li>
                 <li>
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" required>
                 </li>
                 <li>
                     <label for="phone">Phone</label>
@@ -32,7 +32,7 @@
                 </li>
                 <li>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="myemail@placeholder.com">
+                    <input type="email" id="email" name="email" placeholder="myemail@placeholder.com" required>
                 </li>
                 <li>
                     <label><input type="checkbox">Keep my email adress private</label>
@@ -78,9 +78,10 @@
                 </li>
                 <li>
                     <label>Country</label>
-                    <select name="country">
-                        <option value="choose">- Choose your country -</option>
+                    <select name="country" id="country" required>
+                        <option disabled selected>- Choose your country -</option>
                         <option value="UA">Ukraine</option>
+                        <option disabled>-----------------------------</option>
                         <option value="USA">USA</option>
                         <option value="THAI">Thailand</option>
                         <option value="ESP">Spain</option>
@@ -89,20 +90,15 @@
                 <li>
                     <input name="surprise" type="hidden" value="youFoundIt">
                 </li>
-                <li>
-                    <label>Skills</label><br>
-                    <label><input type="checkbox" name="skills" value="html" checked>HTML</label>
-                    <br>
-                    <label><input type="checkbox" name="skills" value="css">CSS</label>
-                    <br>
-                    <label><input type="checkbox" name="skills" value="js">JavaScript</label>
-                    <br>
-                    <label><input type="checkbox" name="skills" value="ruby">Ruby</label>
-                    <br>
-                    <label><input type="checkbox" name="skills" value="scala">Scala</label>
-                    <br>
-                    <label><input type="checkbox" name="skills" value="haskell">Haskell</label>
-                </li>
+            <ul>
+                <span>Skills</span>
+                <li><label><input type="checkbox" name="skills" value="html" checked>HTML</label></li>
+                <li><label><input type="checkbox" name="skills" value="css">CSS</label></li>
+                <li><label><input type="checkbox" name="skills" value="js">JavaScript</label></li>
+                <li><label><input type="checkbox" name="skills" value="ruby">Ruby</label></li>
+                <li><label><input type="checkbox" name="skills" value="scala">Scala</label></li>
+                <li><label><input type="checkbox" name="skills" value="haskell">Haskell</label></li>
+            </ul>
             </ul>
         </fieldset>
     <br>
