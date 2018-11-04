@@ -18,6 +18,9 @@ h2 {
     font-size: 36px;
     font-weight: 100;
 }
+li {
+    list-style: none;
+}
 .container {
     height: inherit;
     width: 1200px;
@@ -30,24 +33,28 @@ h2 {
 }
 .main-nav ul {
     margin-top: 30px;
+    height: 76px;
 }
 .main-nav li {
-    list-style: none;
-    display: inline;
-    font-size: 14px;
-    font-weight: 300;
-    text-transform: uppercase;
+    display: inline-block;
 }
 .main-nav a {
+    font-size: 14px;
+    font-weight: 300;
     text-decoration: none;
+    text-transform: uppercase;
+    border-top: 3px solid transparent;
     margin-right: 15px;
     color:#fff;
+    display: inline-block;
 }
 .main-nav a:hover {
     background-color: #fff;
-    width: 80px;
     height: 76px;
     color: #000;
+}
+.main-nav a.active {
+    border-top: 3px solid #fff;
 }
 .dropdown li {
     list-style: none;
@@ -124,7 +131,7 @@ aside p {
     background-color: #cd2e2d;
     position: absolute;
     top: 2540px;
-    left: 1650px;
+    left: 1600px;
 }
 footer {
     border-top: 4px solid #f1592a;
