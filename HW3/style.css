@@ -24,12 +24,14 @@ li {
 .header {
     background: linear-gradient( to left, #bf1e2e, #f1592a);
     height: 76px;
+    justify-content: center;
 }
 .container {
     width: 1200px;
     display: flex;
     justify-content: space-around;
     margin: auto;
+    height: inherit;
 }
 .container img {
     margin-top: -20px;
@@ -62,17 +64,98 @@ li {
 .main-nav a.active {
     border-top: 3px solid #fff;
 }
-.lang-dropdown li {
-    list-style: none;
-}
-.lang-dropdown a {
-    text-decoration: none;
-    color: #fff;
+.lang-dropdown {
+    outline: none;
+    background: none;
+    border: none;
 }
 .slider {
     background-color: #878c8d;
     text-align: center;
     height: 739px;
+}
+.schedule {
+    width: 1200px;
+    display: flex;
+    margin-top: -170px;
+    padding-left: 470px;
+}
+.schedule a {
+    text-decoration: none;
+}
+.schedule i {
+    font-size: 50px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background-color: #505050;
+    margin-top: 35px;
+}
+.schedule i:hover {
+    background-color: #df4a2b;
+}
+.su, .md, .th, .fri {
+    background-color: #505050;
+    width: 92px ;
+    height: 93px ;
+}
+.md-active {
+    background-color: #df4a2b;
+    width: 92px;
+    height: 93px;
+}
+.descr {
+    background-color: #df4a2b;
+    width: 464px;
+    height: 93px;
+    display: flex;
+    margin-top: 17px;
+}
+.sad {
+    font-size: 27px;
+    font-weight: 100;
+    text-align: left;
+    color: #fff;
+    margin: 0;
+}
+.dur {
+    width: 193px;
+    height: 28px;
+    font-size: 13px;
+    font-weight: 100;
+    text-align: left;
+    color: #fff;
+}
+.buy {
+    font-size: 16px;
+    font-weight: 100;
+    text-align: left;
+    color: #fff;
+    width: 118px;
+    height: 26px;
+    background-color: #484c4d;
+}
+.ticket {
+    margin-left: 30px;
+}
+.ticket img {
+    left: 30px;
+}
+.day {
+    font-size: 16px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.4);
+}
+.number {
+    font-size: 40px;
+    font-weight: 100;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.month {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
 }
 .side-nav li {
     list-style: none;
