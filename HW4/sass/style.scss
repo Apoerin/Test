@@ -1,0 +1,21 @@
+$gradient-color: linear-gradient(to top, #eb402c, #d90647);
+$dot-color: linear-gradient(to top, #eb402c, #d90647), linear-gradient(to bottom, #363636, #363636);
+$h-color: #363636;
+$font-color: #fff;
+$p-color: #808080;
+
+
+.header {
+  background: $gradient-color;
+}
+.dot {
+  background-image: $dot-color;
+  color: $h-color;
+}
+.main-nav li, .head-download h2, .head-download p {
+  color: $font-color;
+}
+.booking, .airbnb, .symu-co {
+  background-image: $dot-color;
+  color: $h-color;
+}
