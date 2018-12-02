@@ -8,7 +8,7 @@ directories:
 before_install:
 - npm update
 install:
-- cd Apoerin/test/js-tests/package.json
+- cd Apoerin/test/package.json
 - npm install
 script:
 - npm test
