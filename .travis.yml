@@ -8,7 +8,7 @@ directories:
 before_install:
 - npm update
 install:
-- cd js-tests\
+- cd js-tests\ js#1/
 - npm install
 script:
 - npm test
